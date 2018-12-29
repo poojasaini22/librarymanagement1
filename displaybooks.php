@@ -5,13 +5,13 @@
 <br>
  
 <?php
-include("DBConnection.php");
+include("connect.php");
  
 $search = $_REQUEST["search"];
  
-$query = "select ISBN,Title,Author,Edition,Publication from book_info where title like '%$search%'"; //search with a book name in the table book_info
+$query = "select ISBN,Title,Author,Edition,Publication from BOOK_INFO where title like '%$search%'"; //search with a book name in the table BOOK_INFO
 $result = mysqli_query($db,$query);
- 
+  
 if(mysqli_num_rows($result)>0)if(mysqli_num_rows($result)>0)
  
 {
