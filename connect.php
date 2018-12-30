@@ -6,9 +6,4 @@ define('DB_PASSWORD', 'root123');
 define('DB_DATABASE', 'books'); //where books is the database name
 $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
  
-if (!$db){
-die('error connecting to database');
-}
-echo 'you have connected succesfully';
-?>
 
